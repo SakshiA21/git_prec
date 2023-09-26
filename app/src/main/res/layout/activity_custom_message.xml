@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CustomMessageActivity"
+    android:background="@color/purple_200">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/text1"
+                android:text="Set Your Default Message Here"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="10dp"
+
+                android:background="@color/white"
+                />
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="518dp"
+            android:hint="Type or Paste Custom Message"
+            android:layout_marginHorizontal="17dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:shadowRadius="@integer/material_motion_duration_long_2"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:id="@+id/defalut"
+                />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/SaveChip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:height="30dp"
+                android:onClick="onSendButtonClicked"
+                android:text="@string/save_message"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:chipBackgroundColor="@color/black"
+                app:chipIcon="@drawable/plan"
+                android:layout_marginTop="10dp"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+</LinearLayout>

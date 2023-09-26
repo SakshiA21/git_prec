@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WhatsappDirect</string>
+    <string name="save_message" />
+    <string name="shareText" />
+</resources>
